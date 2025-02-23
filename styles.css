@@ -1,5 +1,5 @@
 /* <=================== IMPORT GOOGLE FONTS ===================> */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Patrick+Hand+SC&family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@400;500&display=swap');
 
 /* <=================== CSS VARIABLES ===================> */
 :root {
@@ -22,7 +22,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Patrick Hand SC', sans-serif; /* Rough handwritten font */
+    font-family: 'Playfair Display', serif;
     color: var(--text-color);
 }
 
@@ -38,19 +38,19 @@ h1 {
     color: var(--primary-color);
 }
 
-/* Elegant Art Deco-style text */
-h2, .fancy-text {
-    font-family: 'Cinzel Decorative', serif;
+h2 {
     font-size: var(--h2-size);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--secondary-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
-/* Rougher handwritten text */
-h3, p {
-    font-family: 'Patrick Hand SC', sans-serif;
+h3 {
+    font-size: var(--h3-size);
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
     font-size: var(--text-size);
     line-height: 1.6;
     text-align: center;
@@ -74,22 +74,18 @@ h3, p {
 .date-container span {
     font-size: 3rem;
     font-weight: bold;
-    font-family: 'Cinzel Decorative', serif;
     color: var(--date-color);
-    letter-spacing: 1px;
 }
 
 .date-container .month {
     font-size: 2rem;
     font-weight: 600;
-    font-family: 'Cinzel Decorative', serif;
     color: var(--secondary-color);
 }
 
 .date-container .year {
     font-size: 1.5rem;
     font-weight: 400;
-    font-family: 'Patrick Hand SC', sans-serif;
     color: var(--text-color);
 }
 
@@ -98,7 +94,6 @@ h3, p {
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
-    font-family: 'Patrick Hand SC', sans-serif;
     color: var(--accent-color);
     margin-top: 20px;
 }
@@ -143,7 +138,6 @@ label.logo {
     padding: 0 30px;
     font-weight: bold;
     color: var(--primary-color);
-    font-family: 'Cinzel Decorative', serif;
 }
 
 nav ul {
@@ -159,7 +153,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: 'Patrick Hand SC', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -230,8 +224,5 @@ footer {
 
 footer h2 {
     font-size: 2rem;
-    font-weight: normal;
-    font-family: 'Cinzel Decorative', serif;
-}
     font-weight: normal;
 }
