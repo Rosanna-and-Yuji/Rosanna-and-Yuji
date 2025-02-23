@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF0DC;
+    color: #8B0000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #FAF0DC;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #8B0000;
+    font-weight: bold;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.wedding-info {
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.rsvp-form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
