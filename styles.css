@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lora', serif;
-    background-image: url('https://github.com/Rosanna-and-Yuji/Rosanna-and-Yuji/raw/main/pexels-steve-30925666.jpg'); /* 背景画像を適用 */
+    background-image: url(/images/pexels-steve-30925666.jpg); /* 背景画像を適用 */
     background-size: cover;
     background-position: center;
     text-align: center;
