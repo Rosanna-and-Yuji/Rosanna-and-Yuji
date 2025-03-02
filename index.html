@@ -1,36 +1,49 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuji & Rosanna</title>
-
-    <!-- Link to CSS -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="background">
-        <div class="content">
-            <h1 class="title">Yuji & Rosanna</h1>
+    <header>
+        <div class="header-container">
+            <h1>Rosanna & Yuji</h1>
+            <p class="address">1234 Some Street, City, Country</p>
             <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="rsvp.html">RSVP</a>
-                <a href="story.html">Story</a>
-                <a href="schedule.html">Schedule</a>
-                <a href="travel.html">Travel</a>
-                <a href="qa.html">Q & A</a>
-                <a href="moments.html">Moments</a>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li><a href="#registry">Registry</a></li>
+                </ul>
             </nav>
-            <div class="hearts" aria-label="love icons">❤️❤️❤️</div>
-            <p class="address">665 91 Skåne, Sweden</p>
-            <a href="rsvp.html" class="btn">Unlock Guest Details</a>
-            <p class="message">We can't wait to share our special day with you. Help us capture our wedding with joy.</p>
         </div>
-    </div>
+    </header>
 
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia magna.</p>
+        </section>
+        
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <p>We would love to have you join us! Please confirm your attendance.</p>
+            <a href="https://rsvp-link.com" class="button">RSVP Here</a>
+        </section>
+        
+        <section id="registry">
+            <h2>Registry</h2>
+            <p>Your presence is the best gift, but if you'd like to contribute, visit our registry.</p>
+            <a href="https://registry-link.com" class="button">View Registry</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rosanna & Yuji. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
