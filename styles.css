@@ -186,9 +186,8 @@ footer p {
 /* Countdown timer styles */
 .countdown {
     font-family: 'Lora', serif;
-    font-size: 30px;
-    color: #8a2be2;
-    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    color: #000000;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
