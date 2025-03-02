@@ -32,8 +32,8 @@ body {
 }
 
 /* タイトル */
-.title {
-    font-family: 'Sacramento', cursive;
+.content .title {
+    font-family: 'Sacramento', cursive !important;
     color: #8a2be2;
     font-size: 50px;
     margin-bottom: 15px;
