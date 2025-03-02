@@ -80,24 +80,24 @@ nav a.active {
     margin-top: 15px;
 }
 
-/* RSVPボタン */
-.btn {
-    display: inline-block;
-    background: #41b6e6;
-    color: white;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 5px;
+
+/* 🌿 Buttons with natural tones */
+button, .btn {
+    background-color: #32afcf !important; /* Earthy green */
+    color: #F7E1AE !important; /* Yellow text */
+    border: 5px solid #8B3A3A; /* Accent border */
+    padding: 10px 20px;
     font-size: 20px;
-    margin-top: 25px;
-    transition: 0.3s;
+    font-weight: bold;
     cursor: pointer;
-    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-.btn:hover {
-    background: #3498db;
+button:hover, .btn:hover {
+    background-color: #6D8F5D !important; /* Lighter green on hover */
 }
+
 
 /* RSVPフォーム */
 form {
