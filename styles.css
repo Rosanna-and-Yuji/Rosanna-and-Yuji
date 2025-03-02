@@ -1,11 +1,11 @@
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sacramento&display=swap" rel="stylesheet">
 
 
 /* 背景設定 */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Lora', serif;
+    font-family: 'Shadows Into Light', cursive;
     background-image: url('https://raw.githubusercontent.com/Rosanna-and-Yuji/Rosanna-and-Yuji/main/images/pexels-steve-30925666.jpg'); /* 背景画像を適用 */
     background-size: cover;
     background-position: center;
@@ -185,7 +185,7 @@ footer p {
 
 /* Countdown timer styles */
 .countdown {
-    font-family: 'Lora', serif;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
     color: #000000;
     padding: 20px;
