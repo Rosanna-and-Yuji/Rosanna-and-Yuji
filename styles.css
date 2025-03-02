@@ -246,3 +246,65 @@ footer p {
 .rsvp-form button:hover {
     background-color: #a0b559;
 }
+
+/* Hamburger menu style */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Navigation links */
+#nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ae54b0;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Hide the links by default */
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.9); /* Light background */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        padding: 20px 0;
+    }
+
+    /* Show hamburger menu only on mobile */
+    .hamburger-menu {
+        display: block;
+        color: #ae54b0; /* Color for hamburger */
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+    }
+
+    /* Styling the links in the hamburger menu */
+    #nav-links a {
+        padding: 15px 0;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Show navigation links when the hamburger menu is clicked */
+    #nav-links.active {
+        display: block;
+    }
+}
