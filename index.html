@@ -30,10 +30,33 @@
             </nav>
             <div class="hearts" aria-label="love icons">❤️❤️❤️</div>
             <p class="address">665 91 Skåne, Sweden</p>
-            <a href="rsvp.html" class="btn">RSVP</a>
+
+            <!-- Button that triggers the modal -->
+            <button class="btn" id="openModalBtn">RSVP</button>
+
+            <!-- Modal -->
+            <div id="rsvpModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeModalBtn">&times;</span>
+                    <h2>RSVP to our Wedding</h2>
+                    <form>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="attending">Will you attend?</label><br>
+                        <input type="radio" id="yes" name="attending" value="yes">
+                        <label for="yes">Yes</label><br>
+                        <input type="radio" id="no" name="attending" value="no">
+                        <label for="no">No</label><br><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
             <p class="message">We can't wait to share our special day with you. Help us capture our wedding with joy.</p>
         </div>
     </div>
+
+    <script src="scripts.js"></script>
 
 </body>
 </html>
