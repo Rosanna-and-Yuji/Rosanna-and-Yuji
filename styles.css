@@ -36,6 +36,7 @@ h1 {
         border: 10px solid #a0b559;
         border-radius: 500px 500px 0 0; /* Rounded top corners */
         margin-top: 55px; /* Add space above the box */
+        margin-bottom: 55px; /* Add space below the box */
     }
 }
 }
