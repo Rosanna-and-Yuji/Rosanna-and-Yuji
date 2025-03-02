@@ -64,3 +64,7 @@ updateCountdown();
         plusOneSelect.addEventListener("change", togglePlusOneName);
     }
 });
+
+function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('active');
+}
