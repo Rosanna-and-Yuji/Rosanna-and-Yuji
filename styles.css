@@ -42,7 +42,7 @@ h1 {
 
 .title {
     font-family: 'Sacramento', cursive !important;  /* Apply Sacramento font */
-    color: #8a2be2;
+    color: #ae54b0;
     font-size: 50px;
     margin-bottom: 15px;
 }
@@ -122,7 +122,7 @@ form button {
 /* メッセージ */
 .message {
     font-size: 18px;
-    color: #8a2be2;
+    color: #ae54b0;
     margin-top: 25px;
 }
 
