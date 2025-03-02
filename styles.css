@@ -85,12 +85,12 @@ nav a.active {
 button, .btn {
     background-color: #32afcf !important; /* Earthy green */
     color: #F7E1AE !important; /* Yellow text */
-    border: 5px solid #8B3A3A; /* Accent border */
+    border: 2px solid #F7E1AE; /* Accent border */
     padding: 10px 20px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: background 0.3s ease;
 }
 
