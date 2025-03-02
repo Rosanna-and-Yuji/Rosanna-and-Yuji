@@ -186,9 +186,9 @@ footer p {
 /* Countdown timer styles */
 .countdown {
     font-family: 'Shadows Into Light', cursive;
-    font-size: 20px;
-    color: #000000;
-    padding: 20px;
+    font-size: 25px;
+    color: #40314a;
+    padding: 10px;
     border-radius: 10px;
     width: 300px;
     margin: 20px auto;
