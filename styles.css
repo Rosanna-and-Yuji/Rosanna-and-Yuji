@@ -62,7 +62,7 @@ nav a {
 }
 
 nav a.active {
-    background-color: #d8b6ff;
+    background-color: #81d1e6;
 }
 
 /* ハート */
@@ -83,7 +83,7 @@ nav a.active {
 
 /* 🌿 Buttons with natural tones */
 button, .btn {
-    background-color: #32afcf !important; /* Earthy green */
+    background-color: #55b6cf !important; /* Earthy green */
     color: #F7E1AE !important; /* Yellow text */
     border: 2px solid #F7E1AE; /* Accent border */
     padding: 10px 20px;
