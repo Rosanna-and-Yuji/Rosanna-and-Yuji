@@ -22,12 +22,13 @@ body {
 
 /* 円柱型のコンテンツボックス */
 .content {
-    background: #fdf8ef;
-    width: 55%;
-    max-width: 750px;
-    padding: 100px 50px;
-    border-radius: 100px / 120px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff9f0 !important;
+        padding: 100px;
+        border: 10px solid #a0b559;
+        border-radius: 500px 500px 0 0; /* Rounded top corners */
+        margin-top: 50px; /* Add space above the box */
+    }
+}
 }
 
 /* タイトル */
