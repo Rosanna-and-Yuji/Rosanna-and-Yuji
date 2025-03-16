@@ -136,9 +136,10 @@ form button {
     background: #6b4eac;
 }
 
+
 @media (max-width: 768px) {
     .content {
-        width: 85%;
+        width: 80%;
         padding: 50px 25px;
         border-radius: 500px 500px 0 0; /* Only top corners are rounded */
     }
