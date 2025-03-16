@@ -19,42 +19,34 @@
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; /* Ensures everything aligns properly */
-    gap: 15px; /* Adjust spacing */
+    justify-content: center; /* Ensures even spacing */
+    gap: 10px; /* Adjust spacing */
 }
 
 /* Label adjustments */
 .checkbox-group label {
     display: flex;
-    flex-direction: column; /* Stack text above checkbox */
-    align-items: center; /* Center align */
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     font-size: 0.9em;
-    width: 48%; /* Ensures two labels per row */
-    min-width: 140px; /* Prevents shrinking */
-    max-width: 180px; /* Prevents excessive stretching */
+    width: calc(50% - 10px); /* Ensures two labels per row */
+    min-width: 120px;
+    max-width: 160px;
     word-wrap: break-word;
 }
 
 /* Force checkboxes to be centered */
 .checkbox-group input[type="checkbox"] {
     margin-top: 5px;
-    transform: scale(1.2); /* Slightly increase size */
-    display: block;
+    transform: scale(1.2);
 }
 
-/* Mobile adjustments */
+/* Mobile Fix - Keep Two Per Row */
 @media (max-width: 600px) {
-    .checkbox-group {
-        gap: 10px; /* Reduce spacing */
-    }
-
     .checkbox-group label {
-        font-size: 0.85em; /* Slightly smaller text */
-        width: 45%; /* Keep two items per row */
-        min-width: 120px;
+        width: calc(50% - 10px); /* Ensures two per row on mobile */
+        font-size: 0.85em;
     }
 }
      
