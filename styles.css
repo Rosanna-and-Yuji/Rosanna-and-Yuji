@@ -295,14 +295,14 @@ nav a {
         position: absolute;
         top: 60px; /* Adjust based on your header height */
         left: 0;
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     /* Show hamburger menu only on mobile */
     .hamburger-menu {
         display: block;
         color: #622775; /* Color for hamburger */
-        padding: 5px;
+        padding: 2px;
         width: 40px; /* Adjust width to create a square shape */
         height: 40px; /* Adjust height to match width */
     display: flex; 
@@ -310,7 +310,7 @@ nav a {
         justify-content: center;
         align-items: center;
         background-color: #ffeac2;
-        border-radius: 4px;
+        border-radius: 2px;
     }
 
 
