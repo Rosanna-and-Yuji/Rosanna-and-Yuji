@@ -305,6 +305,7 @@ nav a {
         border-radius: 4px;
     }
 
+
     /* Styling the links in the hamburger menu */
     #nav-links a {
         padding: 15px 0;
@@ -317,4 +318,13 @@ nav a {
     #nav-links.active {
         display: block;
     }
+}
+
+.hamburger-menu::after {
+    content: "Menu";  /* Text to appear below */
+    display: block;
+    font-size: 14px;
+    color: #ae54b0; /* Match the hamburger icon color */
+    text-align: center;
+    margin-top: 5px; /* Space between icon and text */
 }
