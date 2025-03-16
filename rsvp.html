@@ -41,103 +41,49 @@
                 <h2>We'd love to celebrate with you!</h2>
                 <form id="rsvpForm">
                     <!-- Invitation Code -->
-                    <label for="invitationCode">Invitation Code:</label>
-                    <input type="text" id="invitationCode" required>
+                    <label for="invitationCode">Secret Invitation Code:</label>
+                    <input type="text" id="invitationCode" placeholder="Enter your code here..." required>
 
                     <!-- Full Name -->
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" required>
+                    <label for="name">Your Full Name (We love first names!):</label>
+                    <input type="text" id="name" placeholder="e.g., John Doe" required>
 
                     <!-- RSVP for Partner -->
-                    <label>Will you be RSVP'ing for yourself or with a partner?</label>
+                    <label>Will you be RSVP'ing just for yourself, or with a partner?</label>
                     <select id="attendingWith" required>
                         <option value="self">Just Myself</option>
                         <option value="partner">Myself and a Partner</option>
                     </select>
 
-                    <!-- Partner Details (Hidden Initially) -->
-                    <div id="partnerDetails" style="display:none;">
-                        <h3>Partner Details</h3>
-                        <label for="partnerName">Partner's Full Name:</label>
-                        <input type="text" id="partnerName">
-
-                        <label for="partnerFood">Partner's Food Preferences/Allergies:</label>
-                        <textarea id="partnerFood"></textarea>
-
-                        <label for="partnerAlcohol">Will your partner enjoy the alcoholic open bar?</label>
-                        <select id="partnerAlcohol">
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
+                    <!-- Alcohol Preferences -->
+                    <label>Let’s talk drinks 🍸! Will you enjoy the open bar?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="alcoholYes"> Yes, I'll have a drink (or two... 😏)</label>
+                        <label><input type="checkbox" id="alcoholNo"> No thanks, I’ll pass on the booze!</label>
                     </div>
 
-                    <!-- Meal Preference -->
-                    <label for="meal">Meal Preference:</label>
-                    <select id="meal" required>
-                        <option value="chicken">Chicken</option>
-                        <option value="vegetarian">Vegetarian</option>
-                        <option value="vegan">Vegan</option>
-                        <option value="fish">Fish</option>
-                    </select>
+                    <!-- Partner Details (Hidden Initially) -->
+                    <div id="partnerDetails" style="display:none;">
+                        <h3>Partner’s Info (We’re so excited to meet them!):</h3>
+                        <label for="partnerName">Partner's Full Name:</label>
+                        <input type="text" id="partnerName" placeholder="e.g., Jane Doe">
 
-                    <!-- Alcohol Preference -->
-                    <label for="alcohol">Will you enjoy the alcoholic open bar?</label>
-                    <select id="alcohol" required>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
+                        <label for="partnerFood">Does your partner have any meal preferences or food allergies?</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" id="partnerFoodYes"> Yes, they have specific needs!</label>
+                            <label><input type="checkbox" id="partnerFoodNo"> No, they eat anything!</label>
+                        </div>
+                        <textarea id="partnerFoodDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
 
-                    <!-- Transportation Assistance -->
-                    <label for="transportation">Do you need transportation assistance between the wedding venue and dinner/party location?</label>
-                    <select id="transportation" required>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
+                        <label for="partnerAlcohol">Will your partner enjoy the open bar?</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" id="partnerAlcoholYes"> Yes, they're in for the drinks 🍹</label>
+                            <label><input type="checkbox" id="partnerAlcoholNo"> No, they’ll skip the booze 🍷</label>
+                        </div>
+                    </div>
 
-                    <!-- Email Address -->
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" required>
-
-                    <!-- Song Requests -->
-                    <label for="songs">Songs that will always make you dance:</label>
-                    <textarea id="songs"></textarea>
-
-                    <!-- Additional Notes -->
-                    <label for="notes">Additional Notes:</label>
-                    <textarea id="notes"></textarea>
-
-                    <!-- Submit RSVP Button -->
-                    <button type="submit">Submit RSVP</button>
-                </form>
-            </section>
-        </div>
-    </div>
-
-    <script>
-        // Function to toggle partner details visibility
-        document.getElementById('attendingWith').addEventListener('change', function() {
-            var partnerDetails = document.getElementById('partnerDetails');
-            if (this.value === 'partner') {
-                partnerDetails.style.display = 'block';
-            } else {
-                partnerDetails.style.display = 'none';
-            }
-        });
-
-        // Handle the RSVP form submission
-        document.getElementById('rsvpForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Validate Invitation Code (This is an example validation)
-            var invitationCode = document.getElementById('invitationCode').value;
-            if (invitationCode !== '1234') {  // Replace with your actual invitation code
-                alert('Invalid invitation code!');
-                return;
-            }
-
-            alert('RSVP submitted! Thank you.');
-        });
-    </script>
-</body>
-</html>
-
+                    <!-- Meal Preferences & Allergies for Main Person -->
+                    <label for="meal">What will you be munching on? 🍽</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="mealYes"> Yes, I have preferences/allergies!</label>
+                        <label><input type="checkbox" id="mealNo"> No, I’m
