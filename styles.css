@@ -29,16 +29,15 @@ h1 {
     min-height: 100vh; /* Allow content to expand if necessary */
 }
 
-/* 円柱型のコンテンツボックス */
+/* General content box styling */
 .content {
-        background-color: #fff9f0 !important;
-        padding: 100px;
-        border: 10px solid #a0b559;
-        border-radius: 500px 500px 0 0; /* Rounded top corners */
-        margin-top: 55px; /* Add space above the box */
-        margin-bottom: 55px; /* Add space below the box */
-    }
-}
+    background-color: #fff9f0 !important;
+    padding: 100px;
+    border: 10px solid #a0b559;
+    border-radius: 500px 500px 0 0; /* Keeps the arch consistent */
+    width: 80%; /* Same width for all pages */
+    max-width: 600px; /* Prevents it from being too large on bigger screens */
+    margin: 55px auto; /* Centers and keeps spacing */
 }
 
 .title {
