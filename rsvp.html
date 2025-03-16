@@ -20,48 +20,44 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center checkboxes horizontally */
-    align-items: center; /* Align vertically */
-    gap: 12px; /* Reduce space between checkboxes */
+    align-items: flex-start; /* Align to the top to ensure consistency */
+    gap: 10px; /* Adjust spacing to look better on mobile */
 }
 
-/* Ensuring the label text and checkbox align properly */
+/* Ensuring labels have equal width and proper alignment */
 .checkbox-group label {
     display: flex;
     flex-direction: column; /* Stack text above checkbox */
-    align-items: center; /* Keep everything centered */
-    justify-content: center; /* Ensures text & checkbox align properly */
-    text-align: center; /* Center text */
-    font-size: 0.9em; /* Default font size */
-    max-width: 140px; /* Prevent excessive wrapping */
+    align-items: center; /* Center text and checkbox */
+    justify-content: center; /* Ensure everything is properly aligned */
+    text-align: center;
+    font-size: 0.9em;
+    width: 45%; /* Ensures equal spacing and alignment */
+    min-width: 120px; /* Prevents labels from shrinking too much */
     word-wrap: break-word;
-    white-space: normal; /* Ensure long words wrap properly */
 }
 
-/* Make checkboxes appear directly under the text */
+/* Force checkboxes to be centered under their labels */
 .checkbox-group input[type="checkbox"] {
     margin-top: 5px;
-    transform: scale(1.1); /* Slightly increase checkbox size for better touch interaction */
+    transform: scale(1.2); /* Slightly increase checkbox size */
+    position: relative;
 }
 
-/* 🔧 Responsive design for better mobile experience */
+/* Fix alignment issues on mobile */
 @media (max-width: 600px) {
     .checkbox-group {
-        gap: 8px; /* Reduce gap further for smaller screens */
-        max-width: 100%; /* Ensure the group doesn't shrink weirdly */
+        gap: 5px; /* Reduce space for better fitting */
     }
 
     .checkbox-group label {
-        font-size: 0.7em; /* Make text even smaller if needed */
-        max-width: 100px; /* Reduce max width further for better fit */
+        font-size: 0.75em;
+        width: 48%; /* Keep them evenly spaced in two columns */
+        min-width: 100px;
     }
 
     .checkbox-group input[type="checkbox"] {
-        transform: scale(1.0); /* Keep checkbox size balanced */
-    }
-
-    textarea {
-        width: 90%; /* Give more space for mobile */
-        font-size: 0.85em; /* Slightly smaller text */
+        transform: scale(1.1); /* Keep size balanced */
     }
 }
      
