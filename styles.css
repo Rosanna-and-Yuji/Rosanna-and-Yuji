@@ -293,15 +293,15 @@ nav a {
     /* Show hamburger menu only on mobile */
     .hamburger-menu {
         display: block;
-        color: #ffeac2; /* Color for hamburger */
+        color: #622775; /* Color for hamburger */
         padding: 10px;
-        width: 50px; /* Adjust width to create a square shape */
-        height: 50px; /* Adjust height to match width */
+        width: 40px; /* Adjust width to create a square shape */
+        height: 40px; /* Adjust height to match width */
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #f2e9ed;
-        border-radius: 5px;
+        background-color: #ffeac2;
+        border-radius: 4px;
     }
 
     /* Styling the links in the hamburger menu */
