@@ -86,4 +86,77 @@
                     <label for="meal">What will you be munching on? 🍽</label>
                     <div class="checkbox-group">
                         <label><input type="checkbox" id="mealYes"> Yes, I have preferences/allergies!</label>
-                        <label><input type="checkbox" id="mealNo"> No, I’m
+                        <label><input type="checkbox" id="mealNo"> No, I’m easy!</label>
+                    </div>
+                    <textarea id="mealDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
+
+                    <!-- Alcohol Preferences for Main Person -->
+                    <label>What about the booze? 🍷 (If you skipped the first question, don't worry!)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="alcoholMainYes"> Yes, I'll enjoy the open bar!</label>
+                        <label><input type="checkbox" id="alcoholMainNo"> No alcohol for me, thanks!</label>
+                    </div>
+
+                    <!-- Transportation Help -->
+                    <label for="transportation">Will you need transportation help between the wedding venue and the party?</label>
+                    <select id="transportation" required>
+                        <option value="yes">Yes, please! 🚗</option>
+                        <option value="no">No, I’ve got it covered! 🙌</option>
+                    </select>
+
+                    <!-- Email Address -->
+                    <label for="email">Email Address (So we can send you a copy of your RSVP!) 📧</label>
+                    <input type="email" id="email" placeholder="youremail@example.com" required>
+
+                    <!-- Songs That Will Always Make You Dance -->
+                    <label for="songs">Got any songs that will make you hit the dance floor? 🎶</label>
+                    <textarea id="songs" placeholder="Let us know the tunes you can't resist dancing to! (e.g., 'Uptown Funk')"></textarea>
+
+                    <!-- Additional Notes -->
+                    <label for="notes">Anything else we should know? 🤔</label>
+                    <textarea id="notes" placeholder="Tell us anything extra you'd like to share!"></textarea>
+
+                    <!-- Submit RSVP Button -->
+                    <button type="submit">Submit RSVP 🎉</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Partner Details Visibility
+        document.getElementById('attendingWith').addEventListener('change', function() {
+            var partnerDetails = document.getElementById('partnerDetails');
+            if (this.value === 'partner') {
+                partnerDetails.style.display = 'block';
+            } else {
+                partnerDetails.style.display = 'none';
+            }
+        });
+
+        // Show/Hide Meal Preferences or Allergies details
+        document.getElementById('mealYes').addEventListener('change', function() {
+            document.getElementById('mealDetails').style.display = this.checked ? 'block' : 'none';
+        });
+
+        // Show/Hide Partner Meal Preferences or Allergies details
+        document.getElementById('partnerFoodYes').addEventListener('change', function() {
+            document.getElementById('partnerFoodDetails').style.display = this.checked ? 'block' : 'none';
+        });
+
+        // Handle Form Submission
+        document.getElementById('rsvpForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Validate Invitation Code
+            var invitationCode = document.getElementById('invitationCode').value;
+            if (invitationCode !== '1234') {  // Replace with your actual invitation code
+                alert('Oops! That invitation code is incorrect. Please try again.');
+                return;
+            }
+
+            alert('RSVP submitted! Thank you for sharing the love with us. 💕');
+        });
+    </script>
+</body>
+</html>
