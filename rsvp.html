@@ -19,45 +19,47 @@
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center checkboxes horizontally */
-    align-items: flex-start; /* Align to the top to ensure consistency */
-    gap: 10px; /* Adjust spacing to look better on mobile */
+    justify-content: center; /* Ensures even spacing */
+    align-items: flex-start; /* Align everything at the top */
+    gap: 15px; /* Adjust spacing */
 }
 
-/* Ensuring labels have equal width and proper alignment */
+/* Label adjustments */
 .checkbox-group label {
     display: flex;
     flex-direction: column; /* Stack text above checkbox */
-    align-items: center; /* Center text and checkbox */
-    justify-content: center; /* Ensure everything is properly aligned */
+    align-items: center; /* Ensure center alignment */
+    justify-content: center;
     text-align: center;
     font-size: 0.9em;
-    width: 45%; /* Ensures equal spacing and alignment */
-    min-width: 120px; /* Prevents labels from shrinking too much */
+    width: 48%; /* Ensures two labels per row */
+    min-width: 120px; /* Prevents shrinking */
     word-wrap: break-word;
 }
 
-/* Force checkboxes to be centered under their labels */
+/* Force checkboxes to be centered */
 .checkbox-group input[type="checkbox"] {
     margin-top: 5px;
-    transform: scale(1.2); /* Slightly increase checkbox size */
+    transform: scale(1.2); /* Slightly increase size */
     position: relative;
 }
 
 /* Fix alignment issues on mobile */
 @media (max-width: 600px) {
     .checkbox-group {
-        gap: 5px; /* Reduce space for better fitting */
+        gap: 8px; /* Reduce spacing */
     }
 
     .checkbox-group label {
-        font-size: 0.75em;
-        width: 48%; /* Keep them evenly spaced in two columns */
+        font-size: 0.8em; /* Slightly smaller text */
+        width: 45%; /* Keep two items per row */
         min-width: 100px;
     }
 
     .checkbox-group input[type="checkbox"] {
-        transform: scale(1.1); /* Keep size balanced */
+        margin-top: auto; /* Automatically adjust alignment */
+        display: block;
+        position: relative;
     }
 }
      
