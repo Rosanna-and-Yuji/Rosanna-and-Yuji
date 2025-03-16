@@ -295,7 +295,7 @@ nav a {
         position: absolute;
         top: 60px; /* Adjust based on your header height */
         left: 0;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     /* Show hamburger menu only on mobile */
