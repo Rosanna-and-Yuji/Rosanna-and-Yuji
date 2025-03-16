@@ -28,10 +28,11 @@
 .checkbox-group label {
     display: flex;
     flex-direction: column; /* Stack text above checkbox */
-    align-items: center; /* Keep text and checkbox centered */
+    align-items: center; /* Keep everything centered */
+    justify-content: center; /* Ensures text & checkbox align properly */
+    text-align: center; /* Center text */
     font-size: 0.9em; /* Default font size */
     max-width: 140px; /* Prevent excessive wrapping */
-    text-align: center; /* Keep text centered */
     word-wrap: break-word;
     white-space: normal; /* Ensure long words wrap properly */
 }
@@ -40,14 +41,6 @@
 .checkbox-group input[type="checkbox"] {
     margin-top: 5px;
     transform: scale(1.1); /* Slightly increase checkbox size for better touch interaction */
-}
-
-/* Style for text areas to make them properly centered */
-textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto; /* Centers the box horizontally */
-    min-height: 80px;
 }
 
 /* 🔧 Responsive design for better mobile experience */
