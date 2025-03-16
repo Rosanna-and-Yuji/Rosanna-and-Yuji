@@ -36,6 +36,53 @@
             
             <p>Details on accommodations, transportation, and local recommendations coming soon!</p>
         </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question with Yes/No Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question-container {
+            margin-bottom: 20px;
+        }
+        .options {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .option {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .checkbox {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container">
+        <p>Do you like coding?</p>
+        <div class="options">
+            <div class="option">
+                <label for="yes">Yes</label>
+                <input type="checkbox" id="yes" class="checkbox">
+            </div>
+            <div class="option">
+                <label for="no">No</label>
+                <input type="checkbox" id="no" class="checkbox">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
     </div>
 
     <script src="script.js"></script>
