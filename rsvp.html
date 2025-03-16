@@ -15,22 +15,10 @@
     <script defer src="script.js"></script>
 
     <style>
-        /* Centering the content */
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            max-width: 800px; /* Limit form width */
-            margin: 0 auto;
-            padding: 20px;
-        }
-
         /* Custom styles for checkboxes and layout */
         .checkbox-group {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Center the checkboxes horizontally */
             gap: 20px;
         }
 
@@ -39,31 +27,16 @@
             flex-direction: column;
             align-items: center;
             font-size: 0.9em; /* Smaller font size */
-            max-width: 200px; /* Optional: Limit width to avoid wide labels */
         }
 
         .checkbox-group input[type="checkbox"] {
             margin-top: 5px;
         }
 
-        /* Ensuring text wraps correctly on smaller screens */
-        @media (max-width: 600px) {
-            .checkbox-group {
-                flex-direction: column; /* Stack checkboxes vertically on mobile */
-                align-items: flex-start; /* Align to the left */
-            }
-
-            .checkbox-group label {
-                width: 100%; /* Make each checkbox label take the full width */
-                text-align: left; /* Align text to the left */
-            }
-        }
-
         /* Styling for the form */
         form {
             font-family: 'Sacramento', sans-serif;
             font-size: 1em;
-            width: 100%;
         }
 
         input[type="text"], input[type="email"], textarea, select {
