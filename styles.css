@@ -336,4 +336,5 @@ nav a {
     color: #ae54b0; /* Match the hamburger icon color */
     text-align: center;
     margin-top: 0px; /* Space between icon and text */
+     margin-bottom: 2px; /* Space between icon and text */
 }
