@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     justify-content: center; /* Center checkboxes horizontally */
     align-items: center; /* Align vertically */
-    gap: 15px; /* Space between checkboxes */
+    gap: 12px; /* Reduce space between checkboxes */
 }
 
 /* Ensuring the label text and checkbox align properly */
@@ -30,15 +30,16 @@
     flex-direction: column; /* Stack text above checkbox */
     align-items: center; /* Keep text and checkbox centered */
     font-size: 0.9em; /* Default font size */
-    max-width: 140px; /* Set a reasonable max width to prevent excessive wrapping */
+    max-width: 140px; /* Prevent excessive wrapping */
     text-align: center; /* Keep text centered */
     word-wrap: break-word;
+    white-space: normal; /* Ensure long words wrap properly */
 }
 
 /* Make checkboxes appear directly under the text */
 .checkbox-group input[type="checkbox"] {
     margin-top: 5px;
-    transform: scale(1.2); /* Slightly increase checkbox size for better touch interaction */
+    transform: scale(1.1); /* Slightly increase checkbox size for better touch interaction */
 }
 
 /* Style for text areas to make them properly centered */
@@ -49,16 +50,20 @@ textarea {
     min-height: 80px;
 }
 
-/* Responsive design for mobile */
+/* 🔧 Responsive design for better mobile experience */
 @media (max-width: 600px) {
     .checkbox-group {
-        justify-content: center; /* Keep centered */
-        flex-wrap: wrap; /* Allow checkboxes to wrap */
+        gap: 8px; /* Reduce gap further for smaller screens */
+        max-width: 100%; /* Ensure the group doesn't shrink weirdly */
     }
 
     .checkbox-group label {
-        font-size: 0.75em; /* Reduce font size for better fit */
-        max-width: 120px; /* Ensure labels fit well */
+        font-size: 0.7em; /* Make text even smaller if needed */
+        max-width: 100px; /* Reduce max width further for better fit */
+    }
+
+    .checkbox-group input[type="checkbox"] {
+        transform: scale(1.0); /* Keep checkbox size balanced */
     }
 
     textarea {
