@@ -41,6 +41,7 @@
     transform: scale(1.2); /* Slightly increase checkbox size for better touch interaction */
 }
 
+
 /* Responsive design for mobile */
 @media (max-width: 600px) {
     .checkbox-group {
@@ -50,7 +51,12 @@
 
     .checkbox-group label {
         font-size: 0.75em; /* Reduce font size for better fit */
-        max-width: 120px; /* Make the text take up less space */
+        max-width: 120px; /* Ensure labels fit well */
+    }
+
+    textarea {
+        width: 90%; /* Give more space for mobile */
+        font-size: 0.85em; /* Slightly smaller text */
     }
 }
      
