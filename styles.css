@@ -327,8 +327,8 @@ nav a {
     content: "Menu";  /* Text to appear below */
     display: block; /* Forces the text onto a new line */
     font-family: 'Sacramento', cursive
-    font-size: 14px;
+    font-size: 10px;
     color: #ae54b0; /* Match the hamburger icon color */
     text-align: center;
-    margin-top: 5px; /* Space between icon and text */
+    margin-top: 1px; /* Space between icon and text */
 }
