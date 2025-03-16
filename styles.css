@@ -142,6 +142,8 @@ form button {
         width: 80%;
         padding: 50px 25px;
         border-radius: 500px 500px 0 0; /* Only top corners are rounded */
+        margin-left: auto; /* Center it */
+        margin-right: auto; /* Center it */
     }
 }
 
@@ -298,7 +300,8 @@ nav a {
         padding: 10px;
         width: 40px; /* Adjust width to create a square shape */
         height: 40px; /* Adjust height to match width */
-        display: flex;
+    display: flex; 
+    flex-direction: column; /* Stack icon and text vertically */
         justify-content: center;
         align-items: center;
         background-color: #ffeac2;
@@ -322,7 +325,7 @@ nav a {
 
 .hamburger-menu::after {
     content: "Menu";  /* Text to appear below */
-    display: block;
+    display: block; /* Forces the text onto a new line */
     font-size: 14px;
     color: #ae54b0; /* Match the hamburger icon color */
     text-align: center;
