@@ -40,6 +40,7 @@ h1 {
     margin: 55px auto; /* Centers and keeps spacing */
 }
 
+
 .title {
     font-family: 'Sacramento', cursive !important;  /* Apply Sacramento font */
     color: #ae54b0;
@@ -99,6 +100,13 @@ button:hover, .btn:hover {
     background-color: #a0b559 !important; /* Lighter green on hover */
 }
 
+
+    .rsvp-form {
+        width: 100%; /* Makes sure it fills the .content box */
+        max-width: none; /* Removes max-width limitation */
+        padding: 20px; /* Adjusts padding to match other pages */
+    }
+}
 
 /* RSVPフォーム */
 form {
