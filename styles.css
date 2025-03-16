@@ -326,6 +326,7 @@ nav a {
 .hamburger-menu::after {
     content: "Menu";  /* Text to appear below */
     display: block; /* Forces the text onto a new line */
+    font-family: 'Sacramento', cursive
     font-size: 14px;
     color: #ae54b0; /* Match the hamburger icon color */
     text-align: center;
