@@ -19,8 +19,8 @@
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Ensures even spacing */
-    align-items: flex-start; /* Align everything at the top */
+    justify-content: center;
+    align-items: center; /* Ensures everything aligns properly */
     gap: 15px; /* Adjust spacing */
 }
 
@@ -28,12 +28,13 @@
 .checkbox-group label {
     display: flex;
     flex-direction: column; /* Stack text above checkbox */
-    align-items: center; /* Ensure center alignment */
+    align-items: center; /* Center align */
     justify-content: center;
     text-align: center;
     font-size: 0.9em;
     width: 48%; /* Ensures two labels per row */
-    min-width: 120px; /* Prevents shrinking */
+    min-width: 140px; /* Prevents shrinking */
+    max-width: 180px; /* Prevents excessive stretching */
     word-wrap: break-word;
 }
 
@@ -41,25 +42,19 @@
 .checkbox-group input[type="checkbox"] {
     margin-top: 5px;
     transform: scale(1.2); /* Slightly increase size */
-    position: relative;
+    display: block;
 }
 
-/* Fix alignment issues on mobile */
+/* Mobile adjustments */
 @media (max-width: 600px) {
     .checkbox-group {
-        gap: 8px; /* Reduce spacing */
+        gap: 10px; /* Reduce spacing */
     }
 
     .checkbox-group label {
-        font-size: 0.8em; /* Slightly smaller text */
+        font-size: 0.85em; /* Slightly smaller text */
         width: 45%; /* Keep two items per row */
-        min-width: 100px;
-    }
-
-    .checkbox-group input[type="checkbox"] {
-        margin-top: auto; /* Automatically adjust alignment */
-        display: block;
-        position: relative;
+        min-width: 120px;
     }
 }
      
