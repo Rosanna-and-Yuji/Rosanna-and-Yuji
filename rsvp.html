@@ -19,9 +19,8 @@
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Ensures even spacing */
-    align-items: flex-start; /* Align everything at the top */
-    gap: 15px; /* Adjust spacing */
+    justify-content: space-between; /* This will make sure there’s spacing between the labels */
+    gap: 15px; /* Adjust spacing between checkboxes */
 }
 
 /* Label adjustments */
@@ -47,13 +46,13 @@
 /* Fix alignment issues on mobile */
 @media (max-width: 600px) {
     .checkbox-group {
-        gap: 1px; /* Reduce spacing */
+        gap: 5px; /* Reduce spacing */
     }
 
     .checkbox-group label {
         font-size: 0.8em; /* Slightly smaller text */
-        width: 45%; /* Keep two items per row */
-       min-width: 100px;
+        width: 48%; /* Keep two items per row */
+        min-width: 100px; /* Keep them from shrinking too much */
     }
 
 }
