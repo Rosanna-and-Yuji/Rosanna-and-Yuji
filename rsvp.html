@@ -13,6 +13,66 @@
 
     <!-- Link to JavaScript -->
     <script defer src="script.js"></script>
+
+    <style>
+        /* Custom styles for checkboxes and layout */
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.9em; /* Smaller font size */
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 5px;
+        }
+
+        /* Styling for the form */
+        form {
+            font-family: 'Sacramento', sans-serif;
+            font-size: 1em;
+        }
+
+        input[type="text"], input[type="email"], textarea, select {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+
+        button {
+            padding: 12px 30px;
+            background-color: #3b8d99;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        button:hover {
+            background-color: #336d77;
+        }
+
+        /* Example placeholder styles */
+        ::placeholder {
+            color: #bbb;
+        }
+
+        .rsvp-form h2 {
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <div class="background">
@@ -58,8 +118,8 @@
                     <!-- Alcohol Preferences -->
                     <label>Let’s talk drinks 🍸! Will you enjoy the open bar?</label>
                     <div class="checkbox-group">
-                        <label><input type="checkbox" id="alcoholYes"> Yes, I'll have a drink (or two... 😏)</label>
-                        <label><input type="checkbox" id="alcoholNo"> No thanks, I’ll pass on the booze!</label>
+                        <label><span>Yes, I'll have a drink (or two... 😏)</span><input type="checkbox" id="alcoholYes"></label>
+                        <label><span>No thanks, I’ll pass on the booze!</span><input type="checkbox" id="alcoholNo"></label>
                     </div>
 
                     <!-- Partner Details (Hidden Initially) -->
@@ -70,31 +130,31 @@
 
                         <label for="partnerFood">Does your partner have any meal preferences or food allergies?</label>
                         <div class="checkbox-group">
-                            <label><input type="checkbox" id="partnerFoodYes"> Yes, they have specific needs!</label>
-                            <label><input type="checkbox" id="partnerFoodNo"> No, they eat anything!</label>
+                            <label><span>Yes, they have specific needs!</span><input type="checkbox" id="partnerFoodYes"></label>
+                            <label><span>No, they eat anything!</span><input type="checkbox" id="partnerFoodNo"></label>
                         </div>
                         <textarea id="partnerFoodDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
 
                         <label for="partnerAlcohol">Will your partner enjoy the open bar?</label>
                         <div class="checkbox-group">
-                            <label><input type="checkbox" id="partnerAlcoholYes"> Yes, they're in for the drinks 🍹</label>
-                            <label><input type="checkbox" id="partnerAlcoholNo"> No, they’ll skip the booze 🍷</label>
+                            <label><span>Yes, they're in for the drinks 🍹</span><input type="checkbox" id="partnerAlcoholYes"></label>
+                            <label><span>No, they’ll skip the booze 🍷</span><input type="checkbox" id="partnerAlcoholNo"></label>
                         </div>
                     </div>
 
                     <!-- Meal Preferences & Allergies for Main Person -->
                     <label for="meal">What will you be munching on? 🍽</label>
                     <div class="checkbox-group">
-                        <label><input type="checkbox" id="mealYes"> Yes, I have preferences/allergies!</label>
-                        <label><input type="checkbox" id="mealNo"> No, I’m easy!</label>
+                        <label><span>Yes, I have preferences/allergies!</span><input type="checkbox" id="mealYes"></label>
+                        <label><span>No, I’m easy!</span><input type="checkbox" id="mealNo"></label>
                     </div>
                     <textarea id="mealDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
 
                     <!-- Alcohol Preferences for Main Person -->
                     <label>What about the booze? 🍷 (If you skipped the first question, don't worry!)</label>
                     <div class="checkbox-group">
-                        <label><input type="checkbox" id="alcoholMainYes"> Yes, I'll enjoy the open bar!</label>
-                        <label><input type="checkbox" id="alcoholMainNo"> No alcohol for me, thanks!</label>
+                        <label><span>Yes, I'll enjoy the open bar!</span><input type="checkbox" id="alcoholMainYes"></label>
+                        <label><span>No alcohol for me, thanks!</span><input type="checkbox" id="alcoholMainNo"></label>
                     </div>
 
                     <!-- Transportation Help -->
