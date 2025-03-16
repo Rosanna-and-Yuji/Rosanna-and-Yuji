@@ -1,35 +1,37 @@
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sacramento&display=swap" rel="stylesheet">
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSVP - Cecilia & James</title>
+    <title>RSVP - Yuji & Rosanna</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sacramento&display=swap" rel="stylesheet">
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Link to the script (optional if you need JS) -->
+    <!-- Link to JavaScript -->
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="background"> <!-- Background section from index.html -->
-        <div class="content"> <!-- Content wrapper to match index layout -->
+    <div class="background">
+        <div class="content">
+            <h1 class="title">RSVP for Yuji & Rosanna</h1>
 
-            <!-- Header section -->
-            <header>
-                <h1 class="title">RSVP for Cecilia & James' Wedding</h1>
-                <nav>
-                <a href="index.html">Home</a>
-                <a href="rsvp.html" class="active">RSVP</a>
-                <a href="travel.html">Travel & Stay</a>
-                <a href="qa.html">Q & A</a>
-                <a href="gifts.html">Wedding gifts</a>
-                </nav>
-            </header>
+            <!-- Navigation -->
+            <nav>
+                <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+                <div id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="rsvp.html" class="active">RSVP</a>
+                    <a href="travel.html">Travel & Stay</a>
+                    <a href="qa.html">Q & A</a>
+                    <a href="gifts.html">Wedding Gifts</a>
+                </div>
+            </nav>
 
-            <!-- RSVP Form Section -->
+            <!-- RSVP Form -->
             <section class="rsvp-form">
                 <h2>We'd love to celebrate with you!</h2>
                 <form id="rsvpForm">
@@ -63,7 +65,10 @@
     </div>
 
     <script>
-        // JS code to handle form submission
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("active");
+        }
+
         document.getElementById('rsvpForm').addEventListener('submit', function(event) {
             event.preventDefault();
             alert('RSVP submitted! Thank you.');
