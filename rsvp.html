@@ -15,43 +15,51 @@
     <script defer src="script.js"></script>
 
  <style>
-/* Use a grid layout for perfect alignment */
+/* General checkbox layout */
 .checkbox-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 10px; /* Adjust spacing */
-    justify-items: center; /* Ensures items are centered */
-    align-items: center; /* Aligns everything */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensures even spacing */
+    align-items: flex-start; /* Align everything at the top */
+    gap: 15px; /* Adjust spacing */
 }
 
-/* Ensure labels are consistent */
+/* Label adjustments */
 .checkbox-group label {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack text above checkbox */
+    align-items: center; /* Ensure center alignment */
     justify-content: center;
     text-align: center;
-    width: 100%; /* Ensures equal width */
-    max-width: 150px; /* Prevents overly long wrapping */
+    font-size: 0.9em;
+    width: 48%; /* Ensures two labels per row */
+    min-width: 120px; /* Prevents shrinking */
+    word-wrap: break-word;
 }
 
-/* Center checkboxes perfectly */
+/* Force checkboxes to be centered */
 .checkbox-group input[type="checkbox"] {
     margin-top: 5px;
     transform: scale(1.2); /* Slightly increase size */
-    display: block;
+    position: relative;
 }
 
-/* Responsive tweak for smaller screens */
+/* Fix alignment issues on mobile */
 @media (max-width: 600px) {
     .checkbox-group {
-        grid-template-columns: repeat(2, minmax(100px, 1fr)); /* Adjusts for smaller screens */
-        gap: 8px; /* Reduce space */
+        gap: 8px; /* Reduce spacing */
     }
 
     .checkbox-group label {
-        font-size: 0.85em; /* Adjust text size */
-        max-width: 120px;
+        font-size: 0.8em; /* Slightly smaller text */
+        width: 45%; /* Keep two items per row */
+        min-width: 100px;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+        margin-top: auto; /* Automatically adjust alignment */
+        display: block;
+        position: relative;
     }
 }
      
