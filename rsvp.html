@@ -156,13 +156,15 @@ label {
 
                     <!-- Add space between fields -->
 <div style="height: 20px;"></div>
-                        
-                        <label for="partnerFood">Does your partner have any meal preferences or food allergies?</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" id="partnerFoodYes"><span>Yes, they have specific needs!</span></label>
-                            <label><input type="checkbox" id="partnerFoodNo"><span>No, they eat anything!</span></label>
-                        </div>
-                        <textarea id="partnerFoodDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
+                    
+                    <!-- Meal Preferences & Allergies for Main Person -->
+                    <label for="meal">What will you be munching on? 🍽</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="mealYes"><span>Yes, I have allergies!</span></label>
+                    <label><input type="checkbox" id="mealNo"><span>No, I’m easy!</span></label>
+                    </div>
+                    <textarea id="mealDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
+
 
                     
 <!-- Add space between fields -->
@@ -173,6 +175,16 @@ label {
                         <h3>Partner’s Info (We’re so excited to meet them!):</h3>
                         <label for="partnerName">Partner's Full Name:</label>
                         <input type="text" id="partnerName" placeholder="e.g., Jane Doe">
+
+                                            <!-- Add space between fields -->
+<div style="height: 20px;"></div>
+                        
+                        <label for="partnerFood">Does your partner have any meal preferences or food allergies?</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" id="partnerFoodYes"><span>Yes, they have specific needs!</span></label>
+                            <label><input type="checkbox" id="partnerFoodNo"><span>No, they eat anything!</span></label>
+                        </div>
+                        <textarea id="partnerFoodDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
 
                         
 <!-- Add space between fields -->
@@ -185,30 +197,6 @@ label {
                             <label><input type="checkbox" id="partnerAlcoholNo"><span>No, they’ll skip the booze 🍷</span></label>
                         </div>
                     </div>
-
-                    
-<!-- Add space between fields -->
-<div style="height: 20px;"></div>
-                    
-                    <!-- Meal Preferences & Allergies for Main Person -->
-                    <label for="meal">What will you be munching on? 🍽</label>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" id="mealYes"><span>Yes, I have allergies!</span></label>
-                    <label><input type="checkbox" id="mealNo"><span>No, I’m easy!</span></label>
-                    </div>
-                    <textarea id="mealDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
-
-                    
-<!-- Add space between fields -->
-<div style="height: 20px;"></div>
-                    
-                    <!-- Alcohol Preferences for Main Person -->
-                    <label>What about the booze? 🍷 (If you skipped the first question, don't worry!)</label>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" id="alcoholMainYes"><span>Yes, I'll enjoy the open bar!</span></label>
-                        <label><input type="checkbox" id="alcoholMainNo"><span>No alcohol for me, thanks!</span></label>
-                    </div>
-
                     
 <!-- Add space between fields -->
 <div style="height: 20px;"></div>
