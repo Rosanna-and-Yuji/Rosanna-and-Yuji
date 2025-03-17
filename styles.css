@@ -338,3 +338,37 @@ nav a {
     margin-top: 0px; /* Space between icon and text */
      margin-bottom: 5px; /* Space between icon and text */
 }
+
+select {
+    -webkit-appearance: none; /* Removes default iOS styling */
+    -moz-appearance: none; /* Removes default Firefox styling */
+    appearance: none; /* Removes default styling */
+    width: 100%; /* Makes sure it fills the container */
+    padding: 10px; /* Adjusts spacing */
+    font-size: 16px; /* Matches other inputs */
+    border: 2px solid #a0b559; /* Custom border */
+    border-radius: 5px; /* Slight rounding */
+    background-color: #fff9f0; /* Matches RSVP form background */
+    color: #40314a; /* Dark text for readability */
+    cursor: pointer;
+}
+
+/* Add a dropdown arrow manually since we removed the system one */
+select::after {
+    content: "▼"; 
+    font-size: 14px;
+    color: #ae54b0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure it doesn’t interfere with selection */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    select {
+        font-size: 18px; /* Slightly larger for mobile */
+        padding: 12px; /* More spacing for touch-friendly UI */
+    }
+}
