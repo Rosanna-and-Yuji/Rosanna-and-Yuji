@@ -251,9 +251,15 @@ label {
 
                     <!-- Add space between fields -->
 <div style="height: 5px;"></div>
+
                     
-<!-- Submit Button (Always Visible) -->
-<button type="submit">Submit RSVP 🎉</button>
+                    <form id="rsvpForm" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+    <input type="hidden" name="_subject" value="New RSVP Response!">
+    <input type="hidden" name="_autoresponse" value="Thank you for your RSVP! We've received your response. 🎉">
+    <input type="text" name="Name" id="name" required>
+    <input type="email" name="Email" id="email" required>
+    <button type="submit">Submit RSVP 🎉</button>
+</form>
 
 <script>
     document.getElementById('actuallyAttending').addEventListener('change', function() {
