@@ -339,12 +339,19 @@ nav a {
      margin-bottom: 5px; /* Space between icon and text */
 }
 
+/* Container for the select element */
+.select-container {
+    position: relative;
+    width: 100%; /* Ensures container fills the available width */
+}
+
+/* Style for the select box */
 select {
     -webkit-appearance: none; /* Removes default iOS styling */
     -moz-appearance: none; /* Removes default Firefox styling */
     appearance: none; /* Removes default styling */
-    width: 100%; /* Makes sure it fills the container */
-    padding: 10px; /* Adjusts spacing */
+    width: 100%; /* Ensures it fills the container */
+    padding: 10px 30px 10px 10px; /* Add padding for the arrow */
     font-size: 16px; /* Matches other inputs */
     border: 2px solid #a0b559; /* Custom border */
     border-radius: 5px; /* Slight rounding */
@@ -353,8 +360,8 @@ select {
     cursor: pointer;
 }
 
-/* Add a dropdown arrow manually since we removed the system one */
-select::after {
+/* Custom arrow added after the select container */
+.select-container::after {
     content: "▼"; 
     font-size: 14px;
     color: #ae54b0;
@@ -369,6 +376,6 @@ select::after {
 @media (max-width: 768px) {
     select {
         font-size: 18px; /* Slightly larger for mobile */
-        padding: 12px; /* More spacing for touch-friendly UI */
+        padding: 12px 30px 12px 12px; /* Adjust padding for mobile */
     }
 }
