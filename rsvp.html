@@ -326,8 +326,8 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
         alert('RSVP submitted! Thank you for sharing the love with us. 💕');
     }
 
-    // Submit the form
-    this.submit();
+    // Allow the form to submit
+    setTimeout(() => this.submit(), 100); // Small delay to let the alert show before redirecting
 });
         
     </script>
