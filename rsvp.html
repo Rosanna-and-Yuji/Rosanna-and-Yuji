@@ -143,6 +143,21 @@ label {
                         </select>
                     </div>
 
+                    <!-- Add space between fields -->
+<div style="height: 5px;"></div>
+                    
+<!-- Attendance Confirmation -->
+<label>Are you (and your partner, if applicable) actually coming to the wedding? 🎉</label>
+<div class="select-container">
+    <select id="actuallyAttending" required>
+        <option value="">-- Please select --</option>
+        <option value="yes">Yes! We wouldn’t miss it for the world! 💖</option>
+        <option value="no">No, unfortunately, we can't make it... 😔</option>
+    </select>
+</div>
+
+<!-- All RSVP fields (initially hidden) -->
+<div id="rsvpDetails" style="display: none;">
                     
 <!-- Add space between fields -->
 <div style="height: 20px;"></div>
@@ -240,6 +255,29 @@ label {
             </section>
         </div>
     </div>
+
+    <script>
+    document.getElementById('actuallyAttending').addEventListener('change', function() {
+        var rsvpDetails = document.getElementById('rsvpDetails');
+        var partnerDetails = document.getElementById('partnerDetails');
+
+        if (this.value === 'yes') {
+            rsvpDetails.style.display = 'block';
+        } else {
+            rsvpDetails.style.display = 'none';
+        }
+    });
+
+    document.getElementById('attendingWith').addEventListener('change', function() {
+        var partnerDetails = document.getElementById('partnerDetails');
+
+        if (this.value === 'partner' && document.getElementById('actuallyAttending').value === 'yes') {
+            partnerDetails.style.display = 'block';
+        } else {
+            partnerDetails.style.display = 'none';
+        }
+    });
+</script>
 
     <script>
         // Toggle Partner Details Visibility
