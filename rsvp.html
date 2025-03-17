@@ -15,31 +15,25 @@
     <script defer src="script.js"></script>
 
  <style>
-/* General checkbox layout */
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* This will make sure there’s spacing between the labels */
     gap: 15px; /* Adjust spacing between checkboxes */
 }
 
 .checkbox-group label {
     display: flex !important;
-    flex-direction: column !important; /* Stack text above checkbox */
-    align-items: center !important; /* Center checkbox under the text */
-    justify-content: center !important;
-    text-align: center;
+    flex-direction: row !important; /* Place checkbox before text */
+    align-items: center !important; /* Align checkbox and text properly */
+    gap: 8px !important; /* Space between checkbox and text */
     font-size: 1em;
-    width: auto; /* Adjust based on content */
-    min-width: 140px; /* Ensures it doesn't shrink too much */
-    word-wrap: break-word;
+    cursor: pointer; /* Makes it easier to click */
 }
 
-/* Center checkbox under text */
 .checkbox-group input[type="checkbox"] {
-    margin-top: 5px;
     transform: scale(1.2); /* Slightly increase size */
-    align-self: center; /* Ensure the checkbox is centered */
+    margin: 0; /* Remove extra spacing */
+    align-self: center;
 }
 
 /* Fix alignment issues on mobile */
