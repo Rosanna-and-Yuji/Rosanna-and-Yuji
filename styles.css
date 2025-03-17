@@ -348,7 +348,7 @@ select {
     font-size: 16px; /* Matches other inputs */
     border: 2px solid #a0b559; /* Custom border */
     border-radius: 5px; /* Slight rounding */
-    background-color: #fff9f0; /* Matches RSVP form background */
+    background-color: #ffffff; /* Matches RSVP form background */
     color: #40314a; /* Dark text for readability */
     cursor: pointer;
 }
