@@ -116,7 +116,7 @@ label {
 
             <!-- RSVP Form -->
             <section class="rsvp-form">
-                <form id="rsvpForm">
+<form id="rsvpForm" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
                     <!-- Invitation Code -->
                     <label for="invitationCode">Secret Invitation Code:</label>
                     <input type="text" id="invitationCode" placeholder="Enter your code here..." required>
@@ -230,7 +230,7 @@ label {
                     
                     <!-- Email Address -->
                     <label for="email">Email Address (So we can send you a copy of your RSVP!) 📧</label>
-                    <input type="email" id="email" placeholder="youremail@example.com" required>
+<input type="email" id="email" name="email" placeholder="youremail@example.com" required>
 
                     
 <!-- Add space between fields -->
@@ -253,13 +253,9 @@ label {
 <div style="height: 5px;"></div>
 
                     
-                    <form id="rsvpForm" action="https://formsubmit.co/power_flower5@hotmail.com" method="POST">
-    <input type="hidden" name="_subject" value="New RSVP Response!">
-    <input type="hidden" name="_autoresponse" value="Thank you for your RSVP! We've received your response. 🎉">
-    <input type="text" name="Name" id="name" required>
-    <input type="email" name="Email" id="email" required>
-    <button type="submit">Submit RSVP 🎉</button>
-</form>
+<input type="hidden" name="_subject" value="New RSVP Response!">
+<input type="hidden" name="_autoresponse" value="Thank you for your RSVP! We've received your response. 🎉">
+<button type="submit">Submit RSVP 🎉</button>
 
 <script>
     document.getElementById('actuallyAttending').addEventListener('change', function() {
