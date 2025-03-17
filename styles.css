@@ -361,6 +361,12 @@ select {
     cursor: pointer;
 }
 
+/* Center text in dropdown options */
+select option {
+    text-align: center; /* Centers the option text */
+    padding: 10px; /* Add padding to give options some space */
+}
+
 /* Custom arrow added after the select container */
 .select-container::after {
     content: "▼"; 
