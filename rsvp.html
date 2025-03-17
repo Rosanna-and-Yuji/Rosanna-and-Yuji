@@ -23,11 +23,12 @@
 
 .checkbox-group label {
     display: flex !important;
-    flex-direction: row !important; /* Place checkbox before text */
-    align-items: center !important; /* Align checkbox and text properly */
-    gap: 2px; /* Space between checkbox and text */
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px; /* Adjust spacing */
     font-size: 1em;
-    cursor: pointer; /* Makes it easier to click */
+    cursor: pointer;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .checkbox-group input[type="checkbox"] {
