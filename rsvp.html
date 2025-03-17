@@ -17,18 +17,20 @@
  <style>
 .checkbox-group {
     display: flex;
-    flex-direction: column; /* Stack checkboxes vertically */
-    gap: 10px; /* Adjust spacing between items */
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; /* Center everything */
 }
 
 .checkbox-group label {
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between checkbox and text */
+    justify-content: center; /* Center the text with checkbox */
+    gap: 8px;
     font-size: 1em;
     cursor: pointer;
-    white-space: nowrap; /* Prevents text from wrapping */
-    width: fit-content; /* Ensures it only takes up necessary space */
+    white-space: nowrap;
+    width: fit-content;
 }
 
 /* Fix alignment issues on mobile */
