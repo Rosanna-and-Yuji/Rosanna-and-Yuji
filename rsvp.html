@@ -163,14 +163,15 @@ label {
 <div id="rsvpDetails" style="display: none;">
                     
 <!-- Add space between fields -->
-<div style="height: 20px;"></div>
+<div style="height: 5px;"></div>
                     
-                    <!-- Alcohol Preferences -->
-                    <label>Let’s talk drinks 🍸! Will you enjoy the open bar?</label>
-                    <div class="checkbox-group">
-                        <label><input type="radio" id="alcoholYes"><span>Yes, I'll have a drink (or two... 😏)</span></label>
-                        <label><input type="radio" id="alcoholNo"><span>No thanks, I’ll pass on the booze!</span></label>
-                    </div>
+<!-- Alcohol Preferences -->
+<label for="alcohol">Let’s talk drinks 🍸! Will you enjoy the open bar?</label>
+<select id="alcohol">
+    <option value="">-- Please select --</option>
+    <option value="yes">Yes, I'll have a drink (or two... 😏)</option>
+    <option value="no">No thanks, I’ll pass on the booze!</option>
+</select>
 
                     <!-- Add space between fields -->
 <div style="height: 20px;"></div>
