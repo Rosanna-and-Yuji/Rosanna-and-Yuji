@@ -127,8 +127,8 @@ label {
 <div style="height: 5px;"></div>
                     
                     <!-- Full Name -->
-                    <label for="name">Your Full Name (We love first names!):</label>
-                    <input type="text" id="name" placeholder="e.g., John Doe" required>
+                    <label for="name">Your Full Name:</label>
+                    <input type="text" id="name" placeholder="e.g., Winnie the Pooh" required>
 
                     
 <!-- Add space between fields -->
@@ -158,12 +158,12 @@ label {
 <div style="height: 20px;"></div>
                     
                     <!-- Meal Preferences & Allergies for Main Person -->
-                    <label for="meal">What will you be munching on? 🍽</label>
+                    <label for="meal">Do you have any allergies or meal prefrences? 🍽</label>
                     <div class="checkbox-group">
-                        <label><input type="checkbox" id="mealYes"><span>Yes, I have allergies!</span></label>
-                    <label><input type="checkbox" id="mealNo"><span>No, I’m easy!</span></label>
+                        <label><input type="checkbox" id="mealYes"><span>Yes!</span></label>
+                    <label><input type="checkbox" id="mealNo"><span>No, I eat anything and everything!</span></label>
                     </div>
-                    <textarea id="mealDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
+                    <textarea id="mealDetails" placeholder="Tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
 
 
                     
@@ -173,7 +173,7 @@ label {
                     <!-- Partner Details (Hidden Initially) -->
                     <div id="partnerDetails" style="display:none;">
                         <label for="partnerName">Partner's Full Name:</label>
-                        <input type="text" id="partnerName" placeholder="e.g., Jane Doe">
+                        <input type="text" id="partnerName" placeholder="e.g., Light Yagami">
 
                                             <!-- Add space between fields -->
 <div style="height: 20px;"></div>
@@ -183,7 +183,7 @@ label {
                             <label><input type="checkbox" id="partnerFoodYes"><span>Yes, they have specific needs!</span></label>
                             <label><input type="checkbox" id="partnerFoodNo"><span>No, they eat anything!</span></label>
                         </div>
-                        <textarea id="partnerFoodDetails" placeholder="If yes, tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
+                        <textarea id="partnerFoodDetails" placeholder="Tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
 
                         
 <!-- Add space between fields -->
@@ -204,8 +204,9 @@ label {
                     <label for="transportation">Will you need transportation help between the wedding venue and the party?</label>
                     <div class="select-container">
                         <select id="transportation" required>
+<option value="no">No, I’ve got it covered! 🙌</option>
                             <option value="yes">Yes, please! 🚗</option>
-                            <option value="no">No, I’ve got it covered! 🙌</option>
+                            
                         </select>
                     </div>
 
@@ -267,7 +268,7 @@ label {
 
             // Validate Invitation Code
             var invitationCode = document.getElementById('invitationCode').value;
-            if (invitationCode !== '1234') {  // Replace with your actual invitation code
+            if (invitationCode !== 'Love2025') {  // Replace with your actual invitation code
                 alert('Oops! That invitation code is incorrect. Please try again.');
                 return;
             }
