@@ -248,15 +248,12 @@ label {
                     <!-- Additional Notes -->
                     <label for="notes">Anything else we should know? 🤔</label>
                     <textarea id="notes" placeholder="Tell us anything extra you'd like to share!"></textarea>
+</div>
 
-                    <!-- Submit RSVP Button -->
-                    <button type="submit">Submit RSVP 🎉</button>
-                </form>
-            </section>
-        </div>
-    </div>
+<!-- Submit Button (Always Visible) -->
+<button type="submit">Submit RSVP 🎉</button>
 
-    <script>
+<script>
     document.getElementById('actuallyAttending').addEventListener('change', function() {
         var rsvpDetails = document.getElementById('rsvpDetails');
         var partnerDetails = document.getElementById('partnerDetails');
@@ -275,6 +272,24 @@ label {
             partnerDetails.style.display = 'block';
         } else {
             partnerDetails.style.display = 'none';
+        }
+    });
+
+    document.getElementById('rsvpForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var attending = document.getElementById('actuallyAttending').value;
+        var email = document.getElementById('email').value;
+
+        if (!attending) {
+            alert('Please let us know if you are attending!');
+            return;
+        }
+
+        if (attending === 'no') {
+            alert('RSVP received! We’ll miss you! 💔');
+        } else {
+            alert('RSVP submitted! Thank you for sharing the love with us. 💕');
         }
     });
 </script>
