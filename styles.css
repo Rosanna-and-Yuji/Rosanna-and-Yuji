@@ -357,7 +357,7 @@ select {
     border-radius: 5px; /* Slight rounding */
     background-color: #ffffff; /* Matches RSVP form background */
     color: #40314a; /* Dark text for readability */
-    text-align: center; /* Center text inside the fields */
+    text-align: center !important; /* Center text inside the fields */
     cursor: pointer;
 }
 
