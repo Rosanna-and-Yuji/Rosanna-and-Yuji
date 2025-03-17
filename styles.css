@@ -368,7 +368,7 @@ select {
     color: #ae54b0;
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     pointer-events: none; /* Ensure it doesn’t interfere with selection */
 }
