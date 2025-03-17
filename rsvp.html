@@ -117,6 +117,10 @@ label {
             <!-- RSVP Form -->
             <section class="rsvp-form">
 <form id="rsvpForm" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+    <input type="hidden" name="_subject" value="New RSVP Response!">
+    <input type="hidden" name="_autoresponse" value="Thank you for your RSVP! We've received your response. 🎉">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://yourwebsite.com/rsvp.html">
                     <!-- Invitation Code -->
                     <label for="invitationCode">Secret Invitation Code:</label>
                     <input type="text" id="invitationCode" placeholder="Enter your code here..." required>
