@@ -275,23 +275,6 @@ label {
         }
     });
 
-    document.getElementById('rsvpForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        var attending = document.getElementById('actuallyAttending').value;
-        var email = document.getElementById('email').value;
-
-        if (!attending) {
-            alert('Please let us know if you are attending!');
-            return;
-        }
-
-        if (attending === 'no') {
-            alert('RSVP received! We’ll miss you! 💔');
-        } else {
-            alert('RSVP submitted! Thank you for sharing the love with us. 💕');
-        }
-    });
 </script>
 
     <script>
@@ -315,19 +298,31 @@ label {
             document.getElementById('partnerFoodDetails').style.display = this.checked ? 'block' : 'none';
         });
 
-        // Handle Form Submission
-        document.getElementById('rsvpForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+// Handle Form Submission
+document.getElementById('rsvpForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-            // Validate Invitation Code
-            var invitationCode = document.getElementById('invitationCode').value;
-            if (invitationCode !== 'Love2025') {  // Replace with your actual invitation code
-                alert('Oops! That invitation code is incorrect. Please try again.');
-                return;
-            }
+    // Validate Invitation Code
+    var invitationCode = document.getElementById('invitationCode').value;
+    if (invitationCode !== 'Love2025') {  // Replace with your actual invitation code
+        alert('Oops! That invitation code is incorrect. Please try again.');
+        return;
+    }
 
-            alert('RSVP submitted! Thank you for sharing the love with us. 💕');
-        });
+    // Check if they are attending
+    var attending = document.getElementById('actuallyAttending').value;
+    if (!attending) {
+        alert('Please let us know if you are attending!');
+        return;
+    }
+
+    // Show appropriate message based on attendance
+    if (attending === 'no') {
+        alert('RSVP received! We’ll miss you! 💔');
+    } else {
+        alert('RSVP submitted! Thank you for sharing the love with us. 💕');
+    }
+});
     </script>
 </body>
 </html>
