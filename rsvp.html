@@ -253,7 +253,7 @@ label {
 <div style="height: 5px;"></div>
 
                     
-                    <form id="rsvpForm" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+                    <form id="rsvpForm" action="https://formsubmit.co/power_flower5@hotmail.com" method="POST">
     <input type="hidden" name="_subject" value="New RSVP Response!">
     <input type="hidden" name="_autoresponse" value="Thank you for your RSVP! We've received your response. 🎉">
     <input type="text" name="Name" id="name" required>
@@ -306,7 +306,6 @@ label {
             document.getElementById('partnerFoodDetails').style.display = this.checked ? 'block' : 'none';
         });
 
-// Handle Form Submission
 document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -330,7 +329,11 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     } else {
         alert('RSVP submitted! Thank you for sharing the love with us. 💕');
     }
+
+    // Submit the form
+    this.submit();
 });
+        
     </script>
 </body>
 </html>
