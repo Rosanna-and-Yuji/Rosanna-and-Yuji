@@ -141,6 +141,7 @@ label {
                     <label>Will you be RSVP'ing just for yourself, or with a partner?</label>
                     <div class="select-container">
                         <select id="attendingWith" required>
+                                    <option value="">-- Please select --</option>
                             <option value="self">Just Myself</option>
                             <option value="partner">Myself and a Partner</option>
                         </select>
@@ -174,20 +175,21 @@ label {
 </select>
 
                     <!-- Add space between fields -->
-<div style="height: 20px;"></div>
+<div style="height: 5px;"></div>
                     
-                    <!-- Meal Preferences & Allergies for Main Person -->
-                    <label for="meal">Do you have any allergies or meal prefrences? 🍽</label>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" id="mealYes"><span>Yes, I have some specific needs!</span></label>
-                    <label><input type="checkbox" id="mealNo"><span>No, I eat anything and everything!</span></label>
-                    </div>
-                    <textarea id="mealDetails" placeholder="Tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
+<!-- Meal Preferences & Allergies -->
+<label for="meal">Do you have any allergies or meal preferences? 🍽</label>
+<select id="meal">
+    <option value="">-- Please select --</option>
+    <option value="yes">Yes, I have specific needs!</option>
+    <option value="no">No, I eat anything and everything!</option>
+</select>
+<textarea id="mealDetails" placeholder="Tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
 
 
                     
 <!-- Add space between fields -->
-<div style="height: 20px;"></div>
+<div style="height: 50px;"></div>
                     
                     <!-- Partner Details (Hidden Initially) -->
                     <div id="partnerDetails" style="display:none;">
@@ -195,29 +197,32 @@ label {
                         <input type="text" id="partnerName" placeholder="e.g., Light Yagami">
 
                                             <!-- Add space between fields -->
-<div style="height: 20px;"></div>
+<div style="height: 5px;"></div>
                         
-                        <label for="partnerFood">Does your partner have any meal preferences or food allergies?</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" id="partnerFoodYes"><span>Yes, they have specific needs!</span></label>
-                            <label><input type="checkbox" id="partnerFoodNo"><span>No, they eat anything!</span></label>
-                        </div>
-                        <textarea id="partnerFoodDetails" placeholder="Tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
-
+  <!-- Partner's Meal Preferences -->
+    <label for="partnerFood">Does your partner have any meal preferences or food allergies?</label>
+    <select id="partnerFood">
+        <option value="">-- Please select --</option>
+        <option value="yes">Yes, they have specific needs!</option>
+        <option value="no">No, they eat anything!</option>
+    </select>
+    <textarea id="partnerFoodDetails" placeholder="Tell us more! (e.g., vegetarian, gluten-free)" style="display:none;"></textarea>
                         
 <!-- Add space between fields -->
-<div style="height: 20px;"></div>
+<div style="height: 5px;"></div>
 
                     
-                        <label for="partnerAlcohol">Will your partner enjoy the open bar?</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" id="partnerAlcoholYes"><span>Yes, they're in for the drinks 🍹</span></label>
-                            <label><input type="checkbox" id="partnerAlcoholNo"><span>No, they’ll skip the booze 🍷</span></label>
-                        </div>
-                    </div>
+    <!-- Partner's Alcohol Preference -->
+    <label for="partnerAlcohol">Will your partner enjoy the open bar?</label>
+    <select id="partnerAlcohol">
+        <option value="">-- Please select --</option>
+        <option value="yes">Yes, they're in for the drinks 🍹</option>
+        <option value="no">No, they’ll skip the booze 🍷</option>
+    </select>
+</div>
                     
 <!-- Add space between fields -->
-<div style="height: 20px;"></div>
+<div style="height: 5px;"></div>
                     
                     <!-- Transportation Help -->
                     <label for="transportation">Will you need transportation help between the wedding venue and the party?</label>
@@ -297,15 +302,15 @@ label {
             }
         });
 
-        // Show/Hide Meal Preferences or Allergies details
-        document.getElementById('mealYes').addEventListener('change', function() {
-            document.getElementById('mealDetails').style.display = this.checked ? 'block' : 'none';
-        });
+    // Show/Hide Meal Preferences details
+    document.getElementById('meal').addEventListener('change', function() {
+        document.getElementById('mealDetails').style.display = this.value === 'yes' ? 'block' : 'none';
+    });
 
-        // Show/Hide Partner Meal Preferences or Allergies details
-        document.getElementById('partnerFoodYes').addEventListener('change', function() {
-            document.getElementById('partnerFoodDetails').style.display = this.checked ? 'block' : 'none';
-        });
+    // Show/Hide Partner Meal Preferences details
+    document.getElementById('partnerFood').addEventListener('change', function() {
+        document.getElementById('partnerFoodDetails').style.display = this.value === 'yes' ? 'block' : 'none';
+    });
 
 document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     event.preventDefault();
