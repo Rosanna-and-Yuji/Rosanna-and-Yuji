@@ -17,24 +17,17 @@
  <style>
 .checkbox-group {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px; /* Adjust spacing between checkboxes */
+    flex-direction: column; /* Stack checkboxes vertically */
+    gap: 10px; /* Adjust spacing between items */
 }
 
 .checkbox-group label {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 8px; /* Adjust spacing */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between checkbox and text */
     font-size: 1em;
     cursor: pointer;
-    white-space: nowrap; /* Prevents text from wrapping */
-}
-
-.checkbox-group input[type="checkbox"] {
-    transform: scale(1.2); /* Slightly increase size */
-    margin: 0; /* Remove extra spacing */
-    align-self: center;
+    width: 100%; /* Ensures it takes the full width */
 }
 
 /* Fix alignment issues on mobile */
