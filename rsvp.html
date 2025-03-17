@@ -23,17 +23,16 @@
     gap: 15px; /* Adjust spacing between checkboxes */
 }
 
-/* Label adjustments */
 .checkbox-group label {
-    display: flex;
-    flex-direction: column; /* Stack text above checkbox */
-    align-items: center; /* Center checkbox under the text */
-    justify-content: center;
-    text-align: center;
-    font-size: 0.9em;
-    width: 48%; /* Ensures two labels per row */
-    min-width: 120px; /* Prevents shrinking */
-    word-wrap: break-word;
+    display: flex !important;
+    flex-direction: column !important; /* Stack text above checkbox */
+    align-items: center !important; /* Center checkbox under the text */
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 1em !important;
+    width: auto !important; /* Adjust based on content */
+    min-width: 140px !important; /* Ensures it doesn't shrink too much */
+    word-wrap: break-word !important;
 }
 
 /* Center checkbox under text */
