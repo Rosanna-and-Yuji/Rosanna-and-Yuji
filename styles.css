@@ -12,14 +12,6 @@ body {
     text-align: center;
 }
 
-label, input[type="text"], input[type="email"], select, textarea {
-    font-family: 'Nunito', sans-serif;
-}
-
-::placeholder {
-    font-family: 'Nunito', sans-serif;
-    color: #bbb;  /* Optional: you can change the placeholder color here */
-
 h1 {
     font-family: 'Sacramento', cursive !important;
     color: #ae54b0;
