@@ -112,6 +112,7 @@ button:hover, .btn:hover {
         width: 100%; /* Makes sure it fills the .content box */
         max-width: none; /* Removes max-width limitation */
         padding: 20px; /* Adjusts padding to match other pages */
+        border: 2px solid #fff9f0;
     }
 }
 
