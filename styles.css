@@ -37,7 +37,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200%; /* Covers two background images */
+    height: 100%; /* Covers two background images */
     background-image: url('https://rosanna-and-yuji.github.io/Rosanna-and-Yuji/images/311512_poster.jpg');  
     background-size: 100% auto;
     background-repeat: repeat-y;
