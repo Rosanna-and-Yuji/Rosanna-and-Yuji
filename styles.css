@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Shadows+Into+Light&family=Sacramento&display=swap" rel="stylesheet">
 
 
 body {
@@ -44,6 +44,12 @@ h1 {
     color: #ae54b0;
     font-size: 50px;
     margin-bottom: 15px;
+}
+
+p, .rsvp-question, .rsvp-reply {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    color: #333;
 }
 
 /* ナビゲーション */
