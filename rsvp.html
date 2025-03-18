@@ -16,14 +16,26 @@
 
  <style>
 
-             label, input[type="text"], input[type="email"], textarea, select {
-            font-family: 'Nunito', sans-serif;
-        }
+/* Apply Nunito font to labels, text inputs, email inputs, textarea, and select elements */
+label, input[type="text"], input[type="email"], textarea, select {
+    font-family: 'Nunito', sans-serif !important;
+}
 
-        /* Placeholder font styling */
-        ::placeholder {
-            font-family: 'Nunito', sans-serif;
-            color: #bbb; /* Optional: you can change the placeholder color here */
+/* Placeholder font styling */
+::placeholder {
+    font-family: 'Nunito', sans-serif !important;
+    color: #bbb !important; /* Optional: you can change the placeholder color here */
+}
+
+/* Ensure font for select options */
+select {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+/* Optional: if you want to make sure labels have the correct font */
+label {
+    font-family: 'Nunito', sans-serif !important;
+}
         }
 .checkbox-group {
     display: flex;
