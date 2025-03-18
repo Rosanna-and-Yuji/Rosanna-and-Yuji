@@ -5,11 +5,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Shadows Into Light', cursive;
-    background-image: url('https://rosanna-and-yuji.github.io/Rosanna-and-Yuji/images/sakura%20(1).png') !important; /* Enforce image */
-    background-size: cover !important; /* Enforce cover */
-    height: 100vh;
-    background-repeat: repeat !important; /* Enforce repeat */
+    position: relative; /* Make the body a positioned container */
+    height: 100vh;  /* Ensures the body takes up the full viewport height */
     text-align: center;
+}
+
+.background-image {
+    position: absolute; /* Absolute positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://rosanna-and-yuji.github.io/Rosanna-and-Yuji/images/sakura%20(1).png') !important; /* Full URL */
+    background-repeat: repeat;  /* Allows the image to repeat */
+    background-size: auto;  /* Makes sure the image is in its original size */
+    background-position: center;  /* Centers the image */
+    z-index: -1;  /* Places it behind the content */
 }
 
 h1 {
