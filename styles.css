@@ -29,6 +29,7 @@ h1 {
     background-image: url('https://rosanna-and-yuji.github.io/Rosanna-and-Yuji/images/311512_poster.jpg') !important; /* Background image */
     background-size: 100% auto;  /* Fill width, keep original height */
     background-repeat: repeat-y;  /* Repeat only vertically */
+ background-attachment: fixed;  /* Keep background fixed while scrolling */
 }
 
 /* General content box styling */
