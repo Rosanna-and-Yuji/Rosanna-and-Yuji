@@ -26,7 +26,7 @@ h1 {
     align-items: center;
     text-align: center;
     position: relative;  /* Keeps content on top of the background */
-    background-image: url('https://rosanna-and-yuji.github.io/Rosanna-and-Yuji/images/images/311512_poster.jpg'), 
+    background-image: url('https://rosanna-and-yuji.github.io/Rosanna-and-Yuji/images/images/311512_poster.jpg');
     background-size: 100% auto;  /* Full width, auto height */
     background-repeat: repeat-y;  /* Repeat vertically */
     transform: scaleY(-1); /* Flip every other instance */
