@@ -27,11 +27,8 @@ h1 {
     text-align: center;
     position: relative;  /* Keeps content on top of the background */
     background-image: url('https://rosanna-and-yuji.github.io/Rosanna-and-Yuji/images/images/311512_poster.jpg'), 
-                      url('https://rosanna-and-yuji.github.io/Rosanna-and-Yuji/images/images/311512_poster.jpg');  
     background-size: 100% auto;  /* Full width, auto height */
     background-repeat: repeat-y;  /* Repeat vertically */
-    background-position: 0 0, 0 100%;  /* First at top, second at bottom */
-    background-blend-mode: normal;
     transform: scaleY(-1); /* Flip every other instance */
 }
 
