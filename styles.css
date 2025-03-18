@@ -5,10 +5,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Shadows Into Light', cursive;
-background-image: url('images/sakura (1).png') !important; /* Ensure image loads */
-    background-size: cover;  /* Ensures the image covers the entire background */
- height: 100vh;  /* Ensures the body takes up the full viewport height */
-    background-repeat: repeat;  /* Allows the image to repeat if it's smaller than the viewport */
+    background-image: url('images/sakura (1).png') !important; /* Enforce image */
+    background-size: cover !important; /* Enforce cover */
+    height: 100vh;
+    background-repeat: repeat !important; /* Enforce repeat */
     text-align: center;
 }
 
