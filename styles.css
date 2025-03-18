@@ -46,9 +46,9 @@ h1 {
     margin-bottom: 15px;
 }
 
-p {
+p, .rsvp-question, .rsvp-reply {
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     color: #333;
 }
 
@@ -172,7 +172,7 @@ form button {
     }
 
     .message {
-        font-size: 16px;
+        font-size: 1em;
     }
 }
 
@@ -230,7 +230,7 @@ footer p {
     display: block;
     margin-bottom: 8px;
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
 
 .rsvp-form input,
 .rsvp-form select,
@@ -238,7 +238,7 @@ footer p {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: 'Nunito', sans-serif;
@@ -340,8 +340,8 @@ nav a {
     font-size: 22px; /* Fixed syntax error */
     color: #ae54b0; /* Match the hamburger icon color */
     text-align: center;
-    margin-top: 5px; /* Space between icon and text */
-     margin-bottom: 0px; /* Space between icon and text */
+    margin-top: 0px; /* Space between icon and text */
+     margin-bottom: 5px; /* Space between icon and text */
 }
 
 /* Container for the select element */
