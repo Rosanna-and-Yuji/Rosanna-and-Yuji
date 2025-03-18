@@ -340,8 +340,8 @@ nav a {
     font-size: 22px; /* Fixed syntax error */
     color: #ae54b0; /* Match the hamburger icon color */
     text-align: center;
-    margin-top: 2px; /* Space between icon and text */
-     margin-bottom: 1px; /* Space between icon and text */
+    margin-top: 5px; /* Space between icon and text */
+     margin-bottom: 0px; /* Space between icon and text */
 }
 
 /* Container for the select element */
