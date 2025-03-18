@@ -79,6 +79,11 @@ nav a.active {
     margin-top: 15px;
 }
 
+/* Apply Nunito font to all paragraph elements */
+p {
+    font-family: 'Nunito', sans-serif !important;
+}
+
 
 /* 🌿 Buttons with natural tones */
 button, .btn {
