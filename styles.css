@@ -353,6 +353,7 @@ select {
     width: 100%; /* Ensures it fills the container */
     padding: 10px 30px 10px 10px; /* Add padding for the arrow */
     font-size: 16px; /* Matches other inputs */
+    font-family: 'Nunito', sans-serif;
     border: 2px solid #a0b559; /* Custom border */
     border-radius: 5px; /* Slight rounding */
     background-color: #ffffff; /* Matches RSVP form background */
