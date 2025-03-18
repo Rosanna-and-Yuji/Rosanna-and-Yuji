@@ -19,6 +19,12 @@ h1 {
     font-weight: normal;  /* Make the text normal weight */
 }
 
+h5 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 22px;
+    color: #40314a;
+}
+
 .background {
     min-height: 100vh;  /* Ensure the container spans the full height of the viewport */
     display: flex;
