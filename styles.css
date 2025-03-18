@@ -318,6 +318,15 @@ nav a {
         border-radius: 10px;
     }
 
+    document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector("#nav-links");
+    const hamburger = document.querySelector(".hamburger-menu");
+
+    hamburger.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});
+
 
     /* Styling the links in the hamburger menu */
     #nav-links a {
