@@ -264,6 +264,13 @@ footer p {
     background-color: #a0b559;
 }
 
+iframe {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: auto;
+    aspect-ratio: 4 / 3; /* Keeps a good proportion */
+}
+
 /* Hamburger menu style */
 .hamburger-menu {
     display: none;  /* Hidden by default */
@@ -395,3 +402,4 @@ select option {
         padding: 12px 30px 12px 12px; /* Adjust padding for mobile */
     }
 }
+
